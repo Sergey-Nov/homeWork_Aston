@@ -38,6 +38,7 @@ public class CustomArrayList<E> {
      * Метод для замены элемента в списке по индексу.
      * @param index индекс заменяемого элемента;
      * @param element элемент для замены;
+     * @throws IndexOutOfBoundsException выдаст исключение если введенный индекс < 0 или больше либо равен размера внутреннего массива
      */
         public void set(int index, E element) {
             if (index < 0 || index >= size) {
